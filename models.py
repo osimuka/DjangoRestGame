@@ -5,7 +5,6 @@ from django.utils import timezone
 
 class GameDataModel(models.Model):
 
-    id = models.AutoField(primary_key=True)
     unique_id = models.CharField(unique=True, max_length=1000)
     game_data = JSONField()
     created = models.DateTimeField(editable=False)
